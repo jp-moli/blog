@@ -5,6 +5,6 @@ from flask import(
 auth = Blueprint('auth', __name__, url_prefix='/auth')
 
 #Registrar un usuario
-@auth.route('/register')
+@auth.route('/register', mothods=('GET', 'POST'))
 def register():
     return "Registar usuario"
